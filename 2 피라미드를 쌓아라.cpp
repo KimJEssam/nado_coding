@@ -1,0 +1,15 @@
+#include <stdio.h> 
+main() {
+    int floor;
+    printf("¸î ÃþÀ¸·Î ½×°Ú½À´Ï±î?(5~100) ");
+    scanf("%d", &floor);
+    for (int i = 0; i < floor; i++) {             // ÀÔ·Â¹ÞÀº °ª(Ãþ)¸¸Å­ ¹Ýº¹
+        for (int j = i; j < floor - 1; j++) {     // ºóÄ­(S) Ãâ·Â
+            printf("S");                          // printf(" ");
+        }
+        for (int k = 0; k < i * 2 + 1; k++) {     // º°Ç¥ Ãâ·Â
+            printf("*");
+        }
+        printf("\n");                             // ÁÙ¹Ù²Þ(Ãþ ±¸ºÐ)
+    }
+}
